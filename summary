@@ -1,6 +1,22 @@
-Comparative Study Of Fake News Detection Tools
+1. Comparative Study Of Fake News Detection Tools
 
 Existing platforms & tools:
 A variety of tools and platforms exist to detect fake news and assess media bias, each with different goals and technical approaches."Ground News" is a news aggregation platform that highlights political bias by showing how different ideological outlets (Left/Center/Right) cover the same story, using third-party bias ratings and AI-generated summaries under human oversight."AllSides" also focuses on political bias but relies entirely on manual methods like blind surveys, editorial reviews, and crowd feedback to rate media outlets on a five-point bias scale; it does not assess individual articles."NewsGuard" evaluates the credibility of entire news websites using a team of journalists who score them on nine journalistic criteria, providing a 0-100 reliability rating and a color-coded trust label, but it avoids ideological bias labeling. "Media Bias/Fact Check (MBFC)" operates similarly, manually labeling sources based on both political leaning and factual accuracy, though it lacks automatic scoring or article-level analysis.
-
 On the academic and research side, "FakeNewsNet" and "LIAR" are widely-used benchmark datasets that contain labeled examples of fake and real news or claims, primarily for training machine learning models rather than public use. "Grover", developed by the Allen Institute and the University of Washington, is a deep learning model that both generates and detects fake news, achieving high accuracy in identifying AI-generated content through adversarial training. "ClaimBuster", created by UT Arlington, focuses on detecting check-worthy claims within speeches or articles using NLP and machine learning, helping human fact-checkers prioritize content for verification. Overall, while most consumer-facing tools rely on human editorial processes to assess credibility and bias, research-oriented platforms and newer tools like Grover and ClaimBuster showcase the growing role of AI and machine learning in enhancing fake news detection.   
+
+2. Features :
+
+Credibility-Based Ranking :
+Unlike existing platforms that rank news by recency or popularity, our system will rank articles based on a credibility score. This score will reflect how trustworthy the source is and how factually accurate the article appears, helping users prioritize reliable information.
+Bias Detection :
+Our project will identify and label the political bias of news sources using five categories: Extreme Left, Left, Center, Right, and Extreme Right. This helps readers understand the perspective behind the news and make informed judgments.
+Fact-Check Integration :
+We will connect article claims to existing fact-checking sources (such as Snopes, PolitiFact, or Poynter). If a claim has already been verified, our system will show the verdict (e.g., True, False, Misleading), giving users quick access to verified information.
+Sentiment Analysis from Social Media Comments :
+To better understand public reactions, our project will analyze comments from social media platforms (such as Twitter or public forums) related to a news article. The system will summarize the overall sentiment — whether people are reacting positively, negatively, or neutrally — offering valuable social context.
+Source History Tracker :
+Our system will track the historical behavior of each news source — including how often their articles are credible, false, or biased. This allows users to view a reputation profile for each outlet and make trust-based decisions.
+News Summarization :
+Each news article will be automatically summarized into a short, readable paragraph. This saves time and helps users quickly understand the core message of a story without needing to read the full article.
+User Feedback System :
+Users will be able to give feedback on whether they believe a news article is accurate, misleading, or biased. This feedback will help improve the system over time and allow for community-driven verification.
